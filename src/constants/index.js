@@ -58,13 +58,13 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+    title: 'Pet Health AI: Instant Vet Triage & Care Guidance for Every Pet Owner',
+    desc: 'Veterinary care is not only expensive but often inaccessible — especially after hours, in rural areas, or for individuals without reliable transportation. As someone who deeply cares about animals and believes in the power of AI/ML for social good, I wanted to build something meaningful. Pet owners often struggle to determine if a symptom is urgent or if it can wait — and that uncertainty can cause stress or worse, delay critical care.',
     subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: '/textures/project/project1.mp4',
-    logo: '/assets/project-logo1.png',
+      'Built as an intelligent Software-as-a-Service platform using React.js, Flask, AWS Services (Bedrock, SageMaker, Cognito, S3, Location Services), Pinecone, and OpenAI GPT-4.1, Pet Health AI is engineered for real-time decision-making, seamless user experience, and high scalability.',
+    href: 'https://www.youtube.com/watch?v=MszGPMEGh4Q',
+    texture: '/textures/project/Pet_Health_AI.mp4',
+    logo: '/assets/aws_services.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
@@ -79,18 +79,18 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Flask',
+        path: 'assets/Flask.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'AWS',
+        path: '/assets/aws_services.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Pinecone',
+        path: '/assets/pinecone.png',
       },
     ],
   },
