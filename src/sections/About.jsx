@@ -25,8 +25,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Sai Donepudi</p>
               <p className="grid-subtext">
-                With 12 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
-                and responsive websites.
+                A senior at the University of North Texas pursuing a degree in Computer Science and Data Science, with a passion for developing innovative and scalable technology solutions.
               </p>
             </div>
           </div>
@@ -37,10 +36,9 @@ const About = () => {
             <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Tech Stack</p>
+              <p className="grid-headtext">Core Technologies</p>
               <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
+                I specialize in Python, SQL, and React, with strong experience in cloud computing with AWS and applying AI/ML concepts to build intelligent applications.
               </p>
             </div>
           </div>
@@ -58,7 +56,7 @@ const About = () => {
                 showGraticules
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
+                labelsData={[{ lat: 40, lng: -100, text: 'Dallas, Texas', color: 'white', size: 15 }]}
               />
             </div>
             <div>
@@ -69,15 +67,14 @@ const About = () => {
           </div>
         </div>
 
+        {/* Hobbies Section */}
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
-
             <div>
-              <p className="grid-headtext">My Passion for Coding</p>
+              <p className="grid-headtext">Beyond the Code</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+                Outside of technology, I'm an avid creator and explorer. I enjoy expressing my creativity through drawing, staying active by running, collaborating in hackathons, and discovering new cultures through food.
               </p>
             </div>
           </div>
