@@ -2,74 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sai Donepudi | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-
-  <div class="toggle-theme">🌓</div>
+  <div class="theme-toggle" title="Toggle Dark Mode">🌓</div>
 
   <header>
-    <div class="logo">👋 Sai Donepudi</div>
+    <h1 class="logo">Sai Donepudi</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#certificates">Certifications</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="hero" class="section">
-    <div class="hero-content" data-aos="fade-up">
-      <img src="assets/me.JPG" alt="Your Picture" class="avatar" />
-      <h1>Hello, I'm <span class="highlight">Sai Donepudi</span></h1>
-      <p>Engineer, Creative Thinker, and Tech Enthusiast.</p>
+    <div class="hero-text" data-aos="fade-up">
+      <h2>Hello, I’m <span class="highlight">Sai Donepudi</span></h2>
+      <p>Engineer | Designer | Dreamer</p>
     </div>
   </section>
 
   <section id="about" class="section" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I build beautiful, functional websites with a focus on simplicity and usability. My passion lies in creating meaningful digital experiences.</p>
+    <div class="about-grid">
+        <div class="about-bio">
+            <p>
+                I'm a passionate <strong>Computer Science and Data Science student</strong> with a love for building intelligent systems that make everyday life easier. I specialize in full-stack development and AI integration, and I thrive at the intersection of engineering and creativity.
+            </p>
+            <p>
+                Recently, I’ve been working with <strong>AWS AI/ML tools</strong> like SageMaker and Bedrock to deploy scalable AI solutions. One of my proudest projects involves building an AI-powered veterinary assistant using a real-time chat interface, emergency classification, and skin condition detection — all running securely in the cloud.
+            </p>
+            <p>
+                I believe in designing solutions that are not only functional but also meaningful. Whether it’s using AI to improve animal health, developing responsive web applications, or optimizing backend systems, I aim to build things that help people — and pets — in the real world.
+            </p>
+            <p>
+                Outside of tech, I’m a huge animal lover, an advocate for accessible technology, and an aspiring engineer who wants to push the boundaries of innovation in health, AI, and IoT.
+            </p>
+        </div>
+        <div class="about-details">
+            <ul>
+                <li><strong>🎓 Education:</strong> Bachelor's in Computer Science and Data Science, Graduating 2026</li>
+                <li><strong>🛠️ Current Focus:</strong> Full-stack AI applications, AWS, Generative AI</li>
+                <li><strong>💼 Internship:</strong> Data Science at HyperAnalytics, contributed to scalable systems</li>
+                <li><strong>🌐 Interests:</strong> Cloud-native development, AI/ML, Computer Vision, and IoT</li>
+                <li><strong>🎯 Goal:</strong> Build tech that positively impacts lives, starting with animals</li>
+            </ul>
+        </div>
+    </div>
   </section>
+
 
   <section id="projects" class="section" data-aos="fade-up">
     <h2>Projects</h2>
-    <div class="project-card">
-      <img src="assets/PetHealthAI_Project.png" alt="Project Thumbnail" />
-      <div>
-        <h3>Pet Health AI</h3>
-        <p>Pet Health AI is an AI-powered web application that helps pet owners assess whether their pet's condition is an emergency or not. It uses Amazon Bedrock to classify user messages based on urgency, and Amazon SageMaker to analyze uploaded images of skin conditions (starting with dogs). If an emergency is detected, the app redirects users to nearby veterinary services using AWS Location Service. Built with Flask for the backend, React for the frontend, and integrated with AWS Cognito for secure user authentication, it also leverages Pinecone for semantic search within a RAG pipeline.</p>
+    <div class="card-grid">
+      <div class="card">
+        <img src="assets/PetHealthAI_Project.png" alt="Project" />
+        <div class="card-content">
+          <h3>Smart Finance App</h3>
+          <p>Tracks your expenses and predicts savings using ML.</p>
+        </div>
       </div>
+      <!-- Add more cards -->
     </div>
   </section>
 
   <section id="skills" class="section" data-aos="fade-up">
     <h2>Skills</h2>
-    <div class="skill-tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Python</span>
-      <span>PHP</span>
-      <span>AWS</span>
+    <div class="skill-bar">
+      <label>HTML</label><div><div style="width: 95%"></div></div>
+      <label>JavaScript</label><div><div style="width: 90%"></div></div>
+      <label>React</label><div><div style="width: 80%"></div></div>
+      <label>Python</label><div><div style="width: 85%"></div></div>
     </div>
-  </section>
-
-  <section id="certificates" class="section" data-aos="fade-up">
-    <h2>Certificates</h2>
-    <img src="assets/PostGraduateProgramInAIAndML.png" alt="Certificate" class="cert-img" />
   </section>
 
   <section id="resume" class="section" data-aos="fade-up">
     <h2>Resume</h2>
-    <a href="assets/SaiSriDonepudi_Resume.pdf" class="btn" download>Download My Resume</a>
+    <a href="assets/SaiSriDonepudi_Resume.pdf" class="btn" download>📄 Download Resume</a>
   </section>
 
   <section id="contact" class="section" data-aos="fade-up">
@@ -77,17 +93,16 @@
     <form action="https://formspree.io/f/your-form-id" method="POST">
       <input type="text" name="name" placeholder="Your name" required />
       <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
       <button type="submit" class="btn">Send</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 Sai Donepudi. All rights reserved.</p>
+    <p>&copy; 2025 Sai Donepudi. Crafted with ❤️</p>
   </footer>
 
-  <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script src="script.js"></script>
 </body>
 </html>
