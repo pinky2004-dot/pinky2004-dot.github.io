@@ -1,20 +1,6 @@
-// Simple scroll animation
-document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-  sections.forEach(sec => {
-    sec.style.opacity = 0;
-    sec.style.transition = "opacity 1s ease";
-  });
-
-  const fadeIn = () => {
-    sections.forEach(sec => {
-      const rect = sec.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        sec.style.opacity = 1;
-      }
-    });
-  };
-
-  fadeIn();
-  window.addEventListener("scroll", fadeIn);
+// Scroll fade handled by AOS
+// Dark mode toggle
+const toggleBtn = document.querySelector('.toggle-theme');
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
 });
