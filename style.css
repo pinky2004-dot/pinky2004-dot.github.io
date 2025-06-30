@@ -80,6 +80,46 @@ nav a {
   transform: translateY(-5px);
 }
 
+#resume h2 {
+  margin-bottom: 1rem;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.about-photo img {
+  max-width: 240px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-bio-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(1);
+  transition: transform 0.2s, filter 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  filter: none;
+}
+
 .card img {
   width: 100%;
   display: block;
