@@ -1,6 +1,14 @@
-// Scroll fade handled by AOS
-// Dark mode toggle
-const toggleBtn = document.querySelector('.toggle-theme');
-toggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
+AOS.init();
+
+const toggle = document.querySelector('.theme-toggle');
+const body = document.body;
+
+toggle.addEventListener('click', () => {
+  body.classList.toggle('dark');
+  localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
 });
+
+window.onload = () => {
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark') body.classList.add('dark');
+};
