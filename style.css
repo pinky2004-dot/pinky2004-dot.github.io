@@ -1,0 +1,65 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background: #f7f9fc;
+  color: #333;
+}
+
+header {
+  background: #4b6cb7;
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.project img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}
+
+.skills li {
+  background: #dbe9f4;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+footer {
+  background: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
