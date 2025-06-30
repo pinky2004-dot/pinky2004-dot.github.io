@@ -405,9 +405,9 @@ form input:focus, form textarea:focus {
 .theme-toggle {
   position: fixed;
   top: 20px;
-  right: 60px;
+  right: 20px;
   cursor: pointer;
-  font-size: 1.8rem; /* Larger toggle icon */
+  font-size: 1.0rem; /* Larger toggle icon */
   z-index: 1000;
   color: var(--text);
   background: var(--card);
